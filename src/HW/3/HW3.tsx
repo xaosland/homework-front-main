@@ -13,13 +13,12 @@ export const HW3 = () => {
 
   const handleSave = () => {
       setTexts((newTesxt) => [...newTesxt, currentText])
-      setCurrentText("")
   };
 
   return (
     <div id={'hw03'}>
       {currentText ? (
-        <h1 id={'hw03-text'}>ЗДЕСЬ ХОТЕЛОСЬ БЫ УВИДЕТЬ ВВОДИМЫЙ ТЕКСТ</h1>
+        <h1 id={'hw03-text'}>{currentText}</h1>
       ) : (
         <h1 id={'hw03-default-text'}>Здесь появится новое дело</h1>
       )}
