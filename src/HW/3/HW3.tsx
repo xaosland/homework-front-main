@@ -12,7 +12,7 @@ export const HW3 = () => {
   };
 
   const handleSave = () => {
-      setTexts((newTesxt) => [...newTesxt, currentText])
+setTexts([...texts, currentText])
   };
 
   return (
